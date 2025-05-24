@@ -1,0 +1,1 @@
+/home/abdulla-alheela/code/magento/lib/web/mage/apply/main.js

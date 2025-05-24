@@ -1,0 +1,35 @@
+# Magento 2 generated and cache directories
+/var/
+/generated/
+/pub/static/
+/pub/media/
+
+# Composer dependencies
+/vendor/
+
+# Environment-specific config (DB credentials, keys)
+app/etc/env.php
+
+# IDE/editor specific files
+/.idea/
+/.vscode/
+/*.iml
+
+# Node dependencies
+/node_modules/
+
+# Logs and reports
+*.log
+/report/
+*.cache
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# PHPUnit result cache
+.phpunit.result.cache
+
+# Temporary files
+*.swp
+*~

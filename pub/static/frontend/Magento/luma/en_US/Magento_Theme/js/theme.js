@@ -1,0 +1,1 @@
+/home/abdulla-alheela/code/magento/vendor/magento/theme-frontend-blank/Magento_Theme/web/js/theme.js

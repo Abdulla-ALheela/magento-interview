@@ -1,0 +1,1 @@
+/home/abdulla-alheela/code/magento/vendor/magento/module-page-cache/view/frontend/web/js/page-cache.js
