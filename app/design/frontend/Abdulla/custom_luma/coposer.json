@@ -1,0 +1,14 @@
+{
+    "name": "Abdulla/custom_luma",
+    "description": "Abdulla custom child theme based on Luma",
+    "type": "magento2-theme",
+    "version": "1.0.0",
+    "require": {
+        "magento/framework": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    }
+}
