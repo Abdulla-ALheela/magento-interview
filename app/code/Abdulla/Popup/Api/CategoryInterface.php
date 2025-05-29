@@ -1,8 +1,8 @@
 <?php
 
-declare(strict_types= 1);
+declare(strict_types=1);
 
-namespace App\Code\Abdulla\Popup\Api;
+namespace Abdulla\Popup\Api;
 
 interface CategoryInterface
 {

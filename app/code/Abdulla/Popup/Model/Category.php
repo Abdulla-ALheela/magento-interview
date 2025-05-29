@@ -1,10 +1,10 @@
 <?php
 
-declare(strict_types= 1);
+declare(strict_types=1);
 
-namespace App\Code\Abdulla\Popup\Model;
+namespace Abdulla\Popup\Model;
 
-use App\Code\Abdulla\Popup\Api\CategoryInterface;
+use Abdulla\Popup\Api\CategoryInterface;
 
 class Category implements CategoryInterface
 {

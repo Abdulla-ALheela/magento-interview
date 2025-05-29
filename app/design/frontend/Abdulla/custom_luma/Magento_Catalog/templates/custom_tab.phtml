@@ -1,0 +1,4 @@
+<div class="custom-tab-content">
+    <p>Here are some related products:</p>
+    <?= $block->getLayout()->createBlock(\Magento\Catalog\Block\Product\ProductList\Related::class)->setTemplate('Magento_Catalog::product/list/items.phtml')->toHtml(); ?>
+</div>
