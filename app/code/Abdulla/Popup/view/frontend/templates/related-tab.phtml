@@ -1,0 +1,26 @@
+<?php
+/** @var \Abdulla\Popup\Block\RelatedProducts $block */
+$_relatedProducts = $block->getItems();
+?>
+
+<?php if ($_relatedProducts && count($_relatedProducts)): ?>
+    <div class="related-products">
+        <h2>Related Products</h2>
+        <ul class="product-items">
+            <?php foreach ($_relatedProducts as $_product): ?>
+                <li class="product-item">
+                    <a href="<?= $_product->getProductUrl() ?>">
+                        <img src="<?= $block->getImage($_product, 'product_base_image')->getImageUrl() ?>"
+                             alt="<?= $block->escapeHtml($_product->getName()) ?>" />
+                        <span><?= $block->escapeHtml($_product->getName()) ?></span>
+                    </a>
+                    <div class="price">
+                        <?= $block->getProductPrice($_product) ?>
+                    </div>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+<?php else: ?>
+    <p>No related products found.</p>
+<?php endif; ?>

@@ -1,20 +1,19 @@
-<?xml version="1.0"?>
 <page layout="1column"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-     <referenceBlock name="catalog.product.related" remove="true" />
+
+        <referenceBlock name="catalog.product.related" remove="true" />
+
+
         <referenceBlock name="product.info.details">
-            <block class="Magento\Framework\View\Element\Template"
+            <block class="Abdulla\Popup\Block\Product\View\CustomRelated"
                    name="product.info.test_tab"
-                   template="Abdulla_Popup::test-tab.phtml"
+                   template="Abdulla_Popup::related-tab.phtml"
                    group="detailed_info">
                 <arguments>
-                    <argument name="title" translate="true" xsi:type="string">Test Tab</argument>
+                    <argument name="title" translate="true" xsi:type="string">Related Products</argument>
                 </arguments>
-                <block class="Magento\Catalog\Block\Product\ProductList\Related"
-                       name="product.info.test_tab.related"
-                       template="Magento_Catalog::product/list/items.phtml"/>
             </block>
         </referenceBlock>
     </body>
